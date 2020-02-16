@@ -1,0 +1,138 @@
+<!doctype html>
+<html>
+    <head>
+        <link href="bootstrap.min.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/59da3f9c84.js"></script>
+    </head>
+</html>
+<!--
+<header>
+    <div class="container-fluid">
+    <h1 class="text-primary text-left"><strong>Latitude Analysis </strong><span><i class="fas fa-cloud-sun-rain"></i></span></h1>
+    </div>
+    
+    <ul class="nav nav-pills">
+        <li class="nav-item">
+          <a class="nav-link active" href="landing_page.html"><i class="fas fa-home"></i></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="true">Plots</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="maxt_temp.html">Max Temperature</a>
+            <a class="dropdown-item" href="humidity.html">Humidity</a>
+            <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+            <a class="dropdown-item" href="wind.html">Wind Speed</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Separated link</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="comparisons.html">Comparisons</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="data.html">Data</a>
+        </li>
+      </ul>
+    
+</header>
+-->
+
+<body>
+    <div class="container-fluid">
+      <h1 class="text-primary text-left"><strong>Latitude Analysis </strong><span><i class="fas fa-cloud-sun-rain"></i></span></h1>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="nav-link active" href="landing_page.html"><i class="fas fa-home"></i></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"> <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="comparisons.html">Comparisons</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="data.html">Data</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Plots
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="cloudiness.html">cloudiness</a>
+            <a class="dropdown-item" href="humidity.html">humidity</a>
+            <a class="dropdown-item" href="max_temp.html">max temperature</a>
+            <a class="dropdown-item" href="wind.html">wind speed</a>
+          </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+  </body>
+
+
+
+<body style="background-color: #EEEEEE" class="container-fluid">
+  <!-- Main page content (Project Summary) -->
+<div class="row">
+  <div class="col-md-6">
+    <div class="container jumbotron" style="margin-top: 20px;">
+        <h2 style="text-align: center"> Project Summary </h2>
+        <p>
+          <img style="padding-bottom: 5%; float: left; max-width: 100%; height: auto;" src="Resources/maxtemp.png" class="img-responsive" alt="Graph showing temperature changing with latitude.">
+          <div style="padding-top: 1%; text-align: justify">
+            The purpose of this project was to answer the question: "What's the weather like as we approach the equator?"
+            To perform this analysis, data from 500+ randomly selected cities around the world were gathered using the OpenWeatherMap API.
+            After the data was imported, I used the Pandas library to structure the data and Matplolib generate scatter plots:
+              <ul>
+                <li> Cloudiness Percentage vs. Latitude </li>
+                <li> Humidity Percentage vs. Latitude </li>
+                <li> Maximum Temperature vs Latitude </li>
+                <li> Wind Speed vs. Latitude </li>
+              </ul>
+          </div>
+        </p>
+    </div>
+  </div>
+
+
+
+  <!--<button class="btn btn-block btn-info"><i class="fa fa-info-circle"></i> Info</button>-->
+
+  <!--Link to Visualizations -->
+  <div class="col-md-6">
+    <div class="container jumbotron" style="margin-top: 20px">
+      <div style="padding-bottom: 10px;">
+        <h5 class="text-primary text-center "> Click on one of the graphs for more information </h5>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 text-center">
+              <a href="cloudiness.html"><img class="img-responsive" src="Resources/cloudiness.png" style="max-width: 80%; height: auto;"></a>
+          </div>
+          <div class="col-md-6 text-center">
+              <a href="humidity.html"><img class="img-responsive" src="Resources/humidity.png" style="max-width: 80%; height: auto;"></a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 text-center">
+            <a href="max_temp.html"><img class="img-responsive" src="Resources/maxtemp.png" style="max-width: 80%; height: auto;"> </a>
+          </div>
+          <div class="col-md-6 text-center">
+            <a href="wind.html"><img class="img-responsive" src="Resources/wind_speed.png" style="max-width: 80%; height: aut;"> </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
